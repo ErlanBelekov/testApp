@@ -20,9 +20,11 @@ export const loadUserPosts = (userID) => async (dispatchEvent) => {
     return;
   }
 
+  const orderedByID = userPosts.sort((a, b) => a.id - b.id);
+
   dispatchEvent({
     type: FETCH_USER_POSTS,
-    payload: userPosts,
+    payload: orderedByID,
   });
 };
 
