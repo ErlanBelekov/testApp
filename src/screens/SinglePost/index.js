@@ -141,9 +141,6 @@ const SinglePost = ({ navigation, route: { params = {} } }) => {
           }
           return (
             <ListItemWrapper>
-              <Text fontWeight="700" fontSize={20}>
-                {item.name}
-              </Text>
               <Text fontWeight="500">{item.body}</Text>
             </ListItemWrapper>
           );
