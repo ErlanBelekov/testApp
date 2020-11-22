@@ -5,5 +5,9 @@ export const fetchCommentsForPost = async (postID) => {
     .then((res) => res.json())
     .catch((e) => e);
 
+  if (postComments instanceof Error) {
+    return postComments;
+  }
+
   return postComments;
 };
