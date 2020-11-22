@@ -5,6 +5,8 @@
 First, clone the project:
 ```git clone https://github.com/ErlanBelekov/testApp.git```
 
+<h2>Now follow platform-specific instructions:</h2>
+
 <h2>IOS</h2>
 
 ```
